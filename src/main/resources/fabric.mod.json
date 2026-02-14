@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "crazymc",
+	"version": "${version}",
+	"name": "crazymc",
+	"description": "Crazy game requaiers crazy mods",
+	"authors": [
+		"Pogaming4267"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/pogaming4267/Crazymc.git"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/crazymc/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.po.crazymc.Crazymc"
+		],
+		"fabric-datagen": [
+			"net.po.crazymc.CrazymcDataGenerator"
+		],
+		"client": [
+			"net.po.crazymc.CrazymcClient"
+		]
+	},
+	"mixins": [
+		"crazymc.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
