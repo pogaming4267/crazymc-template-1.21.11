@@ -2,6 +2,6 @@
   "parent": "minecraft:item/generator",
   "textures":{
     "layer0":"crazymc:item/bob"
-  },
+  }
 
 }
